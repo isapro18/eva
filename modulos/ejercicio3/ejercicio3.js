@@ -31,7 +31,7 @@ setTimeout(() => callback(`Iniciando la atención de la solicitud ${s.id}`), 200
 }
 
 //flujo principal con async/await
-async function procesar() {
+export async function procesar2() {
 for (const s of solicitudes) {
 console.log("\nProcesando solicitud:", s.id);
 
@@ -53,4 +53,4 @@ console.log("Error en la solicitud", s.id, "-", e.message);
 }
 }
 
-procesar();
+procesar2();

@@ -30,7 +30,7 @@ else resolve("manual");
 });
 }
 // El flujo principal con async/await
-async function procesar() {
+export async function procesar() {
 for (const s of solicitudes) {
 console.log("\nProcesando solicitud:", s.id);
 
